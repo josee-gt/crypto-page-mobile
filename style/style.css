@@ -368,13 +368,24 @@ main {
 	color: #808080;
 }
 
+.plans-container--slider {
+	display: flex;
+	height: 316px;
+	overflow-x: scroll;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x proximity;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
 .plans-container--card {
 	position: relative;
+	scroll-snap-align: center;
 	width: 70%;
-	min-width: 230px;
+	min-width: 290px;
 	max-width: 300px;
-	height: 250px;
-	margin: 50px auto 0;
+	height: 238px;
+	margin: 50px 14px 0;
 	padding: 0 15px;
 	border-color: var(--just-white);
 	box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.16);
@@ -442,4 +453,51 @@ main {
 .plan-info-container .plan-card--ca span {
 	margin-top: 4px;
 	margin-left: 8px;
+}
+
+footer {
+	width: 100%;
+	min-width: 290px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	background-color: var(--bitcoin-orange);
+}
+
+footer .footer-links {
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	margin-right: 50px;
+}
+
+.footer-links a {
+	color: var(--just-white);
+	font-weight: 500;
+	text-decoration: none;
+	margin-top: 12px;
+}
+
+.footer-reservaded figure {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+figure img {
+	margin: 0 auto;
+}
+
+.footer-reservaded figure figcaption {
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	text-align: center;
+	color: var(--soft-orange);
+	margin-top: 12px;
 }
